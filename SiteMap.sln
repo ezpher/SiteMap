@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteMap", "SiteMap\SiteMap.csproj", "{09483D46-47FE-45A3-A42D-9948026B47F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSiteMap", "TestSiteMap\TestSiteMap.csproj", "{1220A6D6-B794-47AC-B6B5-0B3A7E1846CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09483D46-47FE-45A3-A42D-9948026B47F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09483D46-47FE-45A3-A42D-9948026B47F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09483D46-47FE-45A3-A42D-9948026B47F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09483D46-47FE-45A3-A42D-9948026B47F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1220A6D6-B794-47AC-B6B5-0B3A7E1846CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1220A6D6-B794-47AC-B6B5-0B3A7E1846CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1220A6D6-B794-47AC-B6B5-0B3A7E1846CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1220A6D6-B794-47AC-B6B5-0B3A7E1846CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B290D96F-CAFC-439D-9E40-3FEFE845893C}
+	EndGlobalSection
+EndGlobal
