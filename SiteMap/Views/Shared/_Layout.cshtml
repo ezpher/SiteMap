@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using SiteMap.Breadcrumb
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -28,6 +30,7 @@
         </div>
     </div>
     <div class="container body-content">
+        @Html.ConstructBreadcrumb()
         @RenderBody()
         <hr />
         <footer>

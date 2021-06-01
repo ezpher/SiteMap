@@ -6,7 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace SiteMap.SiteMapHelper
+namespace SiteMap.SiteMap
 {
     public static class SiteMapHelper
     {

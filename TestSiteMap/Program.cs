@@ -1,5 +1,5 @@
 ﻿using SiteMap.Models;
-using SiteMap.SiteMapHelper;
+using SiteMap.SiteMap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
