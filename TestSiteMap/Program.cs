@@ -33,7 +33,7 @@ namespace TestSiteMap
                 Console.WriteLine();
                 Console.WriteLine();
 
-                #region Test Constructing Html SiteMap
+                #region Test Constructing Html SiteMap nb: can copy the output into an html formatter to see the prettified version
                 string siteMapHtml = SiteMapHelper.ConstructSiteMapHtml(SiteMapHelper.ConstructSiteMap());
                 Console.WriteLine(siteMapHtml);
                 #endregion
