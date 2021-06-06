@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SiteMap.Models;
+using SiteMap.SiteMap;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +27,33 @@ namespace SiteMap.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public PartialViewResult Navigation()
+        {
+            CustomSiteMapNode rootMenu = SiteMapHelper.ConstructSiteMap();
+            ConstructUrl(rootMenu);
+                       
+            return PartialView("_Navigation", rootMenu);
+        }
+
+        public void ConstructUrl(CustomSiteMapNode menuNode)
+        {
+            if (menuNode == null) return;
+
+            if (!string.IsNullOrEmpty(menuNode.Url) && menuNode.Url.StartsWith("~/"))
+                menuNode.Url = Url.Content(menuNode.Url);
+
+            if (string.IsNullOrEmpty(menuNode.Url))
+                menuNode.Url = "#";
+
+            if (menuNode.Children != null && menuNode.Children.Count > 0)
+            {
+                foreach (CustomSiteMapNode childMenu in menuNode.Children)
+                {
+                    ConstructUrl(childMenu);
+                }
+            }
         }
     }
 }

@@ -1,0 +1,38 @@
+﻿@using SiteMap.Models;
+@model CustomSiteMapNode
+
+@if (Model != null && Model.Children != null && Model.Children.Count > 0)
+{
+    foreach (CustomSiteMapNode node in Model.Children)
+    {
+        if (node.Children != null && node.Children.Count > 0)
+        {
+            Guid GID = Guid.NewGuid();
+            <div class="sidenav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_@GID" id="@GID" aria-expanded="false" aria-controls="collapse_@GID">
+                    @node.Title
+                    <span class="fa fa-caret-down"></span>
+                </a>
+                <nav id="collapse_@GID" class="collapse sidenav-child" aria-labelledby="@GID" data-parent="@(ViewBag.DataParentID != null ? string.Format("{0}{1}", "#collapse_", ViewBag.DataParentID) : "#mySidenav")">
+                    @foreach (CustomSiteMapNode childNode in node.Children)
+                    {
+                        Html.RenderPartial("_Navigation", childNode, new ViewDataDictionary() { new KeyValuePair<string, object>("DataParentID", GID) });
+                    }
+                </nav>
+            </div>
+        }
+        else
+        {
+            <div class="sidenav-item">
+                <a class="nav-link" href="@node.Url" title="@node.Description">@node.Title</a>
+            </div>
+        }
+    }
+}
+else
+{
+    <div class="sidenav-item">
+        <a class="nav-link" href="@Model.Url" title="@Model.Description">@Model.Title</a>
+    </div>
+}
+

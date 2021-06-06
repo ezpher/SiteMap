@@ -26,7 +26,7 @@ GO
 -- Add site map nodes
 
 INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
-VALUES ('01', 'Home', NULL, '~', NULL)
+VALUES ('01', 'Home', NULL, '~/', NULL)
 
 INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
 VALUES ('01.01', 'News', NULL, '~/News', '01')
