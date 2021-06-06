@@ -10,6 +10,7 @@ namespace SiteMap.SiteMap
 {
     public static class SiteMapHelper
     {
+        // Primary use is for testing site map construction is correct
         public static string ConstructSiteMapHtml(CustomSiteMapNode parentNode)
         {
             StringBuilder htmlOutput = new StringBuilder();
