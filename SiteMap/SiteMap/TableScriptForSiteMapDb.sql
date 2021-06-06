@@ -38,6 +38,18 @@ INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
 VALUES ('01.01.02', 'World', 'News from around the world', '~/News/World', '01.01')
 
 INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
+VALUES ('01.01.02.01', 'Asia', 'News from Asia', '~/News/World/Asia', '01.01.02')
+
+INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
+VALUES ('01.01.02.01.01', 'East Asia', 'News from East Asia', '~/News/World/Asia/EastAsia', '01.01.02.01')
+
+INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
+VALUES ('01.01.02.01.02', 'Southeast Asia', 'News from Southeast Asia', '~/News/World/Asia/SoutheastAsia', '01.01.02.01')
+
+INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
+VALUES ('01.01.02.02', 'Latin America', 'News from Latin America', '~/News/World/LatinAmerica', '01.01.02')
+
+INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)
 VALUES ('01.02', 'Sports', NULL, '~/Sports', '01')
 
 INSERT INTO SiteMap (ID, Title, Description, Url,  Parent)

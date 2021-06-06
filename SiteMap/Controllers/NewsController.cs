@@ -20,8 +20,23 @@ namespace SiteMap.Controllers
             return View();
         }
 
-        // GET: News/World
-        public ActionResult World()
+        // GET: News/World/Asia/EastAsia
+        [Route("News/World/Asia/EastAsia")]
+        public ActionResult EastAsia()
+        {
+            return View();
+        }
+
+        // GET: News/World/Asia/SoutheastAsia
+        [Route("News/World/Asia/SoutheastAsia")]
+        public ActionResult SoutheastAsia()
+        {
+            return View();
+        }
+
+        // GET: News/World/LatinAmerica
+        [Route("News/World/LatinAmerica")]
+        public ActionResult LatinAmerica()
         {
             return View();
         }
